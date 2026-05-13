@@ -1,0 +1,126 @@
+#all-messages {
+  padding: 50px 25px;
+  background-color: #ffffff; /* Fondo blanco institucional */
+}
+
+.message {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.message .image-container {
+  width: 50px;
+  min-width: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.message .message-body {
+  margin-left: 10px;
+  width: calc(100% - 50px);
+}
+
+.message .message-body .user-info {
+  font-weight: bold;
+  color: #006633; /* Verde institucional */
+}
+
+.message .message-body .user-info .time {
+  color: #ffd700; /* Amarillo institucional */
+  font-size: 13px;
+}
+
+.message .message-body p {
+  margin-top: 5px;
+  color: #333333; /* Texto más legible sobre fondo blanco */
+  font-size: 14px;
+}
+
+.send-message {
+  background: #006633; /* Verde institucional */
+  padding: 10px;
+  display: flex;
+}
+
+.send-message input {
+  width: 100%;
+  padding: 7px 5px;
+  border: 1px solid #006633; /* Borde verde */
+  border-radius: 4px;
+  outline: none;
+}
+
+.send-message button {
+  margin-left: 10px;
+  background-color: #ffd700; /* Amarillo institucional */
+  color: #000000; /* Texto negro para contraste */
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-message button:hover {
+  background-color: #006633; /* Verde institucional al hover */
+  color: #ffffff; /* Texto blanco */
+}
+
+#typing-indicator {
+  padding: 15px 25px;
+  color: #006633;
+  font-size: 14px;
+  font-weight: 600;
+  height: auto;
+  background-color: #e8f5e9;
+  border-top: 2px solid #ffd700;
+  border-bottom: 2px solid #ffd700;
+  min-height: 24px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+#typing-indicator:empty {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dot-bounce {
+  0%, 60%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+}
+
+.typing-dots {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.typing-dots span {
+  animation: dot-bounce 1.4s infinite;
+  margin-left: 4px;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}

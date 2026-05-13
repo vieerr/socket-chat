@@ -1,0 +1,42 @@
+main {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff; /* Fondo blanco institucional */
+}
+
+main form {
+  width: 50%;
+  padding: 20px;
+  border: 2px solid #006633; /* Borde verde institucional */
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Contraste suave */
+}
+
+main form .input-group label {
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #006633; /* Verde institucional */
+}
+
+main form .button-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+main form .button-container button {
+  background-color: #006633; /* Verde institucional */
+  color: #ffffff; /* Texto blanco */
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main form .button-container button:hover {
+  background-color: #ffd700; /* Amarillo institucional al hover */
+  color: #000000; /* Texto negro para contraste */
+}
