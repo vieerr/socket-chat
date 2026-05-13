@@ -9,14 +9,25 @@
   </head>
   <body>
     <header>
-      <h1>ESPEChat</h1>
+      <div class="header-content">
+        <h1>ESPEChat</h1>
+      </div>
     </header>
     <main>
-      <div id="all-messages"></div>
-      <div id="typing-indicator"></div>
+      <div class="chat-container">
+        <div id="all-messages" class="messages-container"></div>
+        <div id="typing-indicator" class="typing-indicator"></div>
+      </div>
       <div class="send-message">
-        <input type="text" id="message" />
-        <button id="send-message" class="btn secondary">Enviar</button>
+        <input
+          type="text"
+          id="message"
+          placeholder="Escribe tu mensaje..."
+          autocomplete="off"
+        />
+        <button id="send-message" class="btn primary">
+          Enviar
+        </button>
       </div>
     </main>
     <script src="/socket.io/socket.io.js"></script>
