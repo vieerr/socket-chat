@@ -127,7 +127,7 @@ main {
   border-color: var(--btn-active-border-color);
 }
 
-.primary {
+.btn.primary {
   --btn-color: #ffffff;
   --btn-bg: #006633;
   --btn-border-color: #006633;
@@ -139,6 +139,47 @@ main {
   --btn-active-bg: #004422;
   --btn-active-border-color: #004422;
   --btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group input {
+  border: 1px solid #006633;
+  outline: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.card {
+  box-shadow:
+    0 0 4px 0 rgb(0 0 0 / 8%),
+    0 2px 4px 0 rgb(0 0 0 / 12%);
+  border-radius: 3px;
+  background: #ffffff;
+  border: 1px solid #006633;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  display: inline-block;
+  width: 100%;
+  border: 2px solid #e1e4e8;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #c0392b;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  min-height: 1.2em;
 }
 
 @media (max-width: 768px) {
@@ -154,38 +195,4 @@ main {
   .send-message button {
     width: 100%;
   }
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-}
-
-input {
-  border: 1px solid #006633; /* Verde institucional */
-  outline: none;
-  padding: 10px;
-  border-radius: 3px;
-}
-
-.card {
-  box-shadow:
-    0 0 4px 0 rgb(0 0 0 / 8%),
-    0 2px 4px 0 rgb(0 0 0 / 12%);
-  border-radius: 3px;
-  background: #ffffff; /* Fondo blanco institucional */
-  border: 1px solid #006633; /* Borde verde */
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-container img {
-  display: inline-block;
-  width: 100%;
-  border: 2px solid #e1e4e8;
-  border-radius: 4px;
 }

@@ -2,22 +2,22 @@ main {
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  background-color: #ffffff; /* Fondo blanco institucional */
+  background-color: #ffffff;
 }
 
 main form {
   width: 50%;
   padding: 20px;
-  border: 2px solid #006633; /* Borde verde institucional */
+  border: 2px solid #006633;
   border-radius: 8px;
-  background-color: #f9f9f9; /* Contraste suave */
+  background-color: #f9f9f9;
 }
 
 main form .input-group label {
   text-align: center;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #006633; /* Verde institucional */
+  color: #006633;
 }
 
 main form .button-container {
@@ -26,8 +26,8 @@ main form .button-container {
 }
 
 main form .button-container button {
-  background-color: #006633; /* Verde institucional */
-  color: #ffffff; /* Texto blanco */
+  background-color: #006633;
+  color: #ffffff;
   font-weight: bold;
   padding: 10px 20px;
   border: none;
@@ -37,6 +37,6 @@ main form .button-container button {
 }
 
 main form .button-container button:hover {
-  background-color: #ffd700; /* Amarillo institucional al hover */
-  color: #000000; /* Texto negro para contraste */
+  background-color: #ffd700;
+  color: #000000;
 }

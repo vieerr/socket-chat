@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/register.css" />
-    <title>Registrate</title>
+    <title>ESPEChat — Registrarse</title>
   </head>
   <body>
     <header>
@@ -15,7 +15,8 @@
       <form action="#" method="post" class="card" id="form">
         <div class="input-group">
           <label for="username">Ingresa tu nombre de usuario</label>
-          <input type="text" id="username" />
+          <input type="text" id="username" autocomplete="username" />
+          <span id="error-message" class="error-message" role="alert"></span>
         </div>
         <div class="button-container">
           <button type="submit" class="btn primary" id="login">

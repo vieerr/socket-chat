@@ -24,6 +24,26 @@
   background: linear-gradient(135deg, #004422 0%, #ffed4e 100%);
 }
 
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: var(--avatar-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
 .message {
   display: flex;
   margin-bottom: 15px;
@@ -41,16 +61,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-}
-
-.message .image-container div {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-.message .image-container div:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
 .message .message-body {
@@ -99,7 +109,7 @@
   padding: 10px 12px;
   border-radius: 16px;
   border-top-left-radius: 4px;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
   word-wrap: break-word;
   max-width: 100%;
 }
@@ -125,7 +135,6 @@
   color: #4a4f57;
   font-size: 14px;
   font-weight: 500;
-  height: auto;
   background: #f7f8fa;
   border-top: 1px solid #e1e4e8;
   min-height: 24px;
